@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.2rem;
+
+        span {
+            background-color: white;
+            padding: 1rem 2rem;
+        }
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 0 3px inset #fff;
+        color: #fff;
+        transition: filter 250ms;
+
+        &:hover {
+            transform: translateY(-6px);
+            transition: transform 250ms;
+            filter: brightness(110%);
+        }
+
+        &:active {
+            transform: translateY(0px);
+            transition: transform 250ms;
+        }
+    }
+}
