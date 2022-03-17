@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body {
+  background-color: #353535;
+}
+
+.container {
+  font-family: sans-serif;
+  width: 90%;
+  height: auto;
+  max-width: 700px;
+  padding: 70px 40px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .logo {
+  color: #505050;
+  padding: 20px;
+  margin-bottom: 50px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  border-radius: 7px;
+}
+
+.container .data-process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container .data-process input {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px 30px;
+  border: none;
+  color: grey;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  outline-color: #ffcc6d;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 1.5px;
+}
+
+.container .data-process input::-webkit-input-placeholder {
+  font-style: italic;
+  color: #c7c7c7;
+  letter-spacing: 0;
+}
+
+.container .data-process input:-ms-input-placeholder {
+  font-style: italic;
+  color: #c7c7c7;
+  letter-spacing: 0;
+}
+
+.container .data-process input::-ms-input-placeholder {
+  font-style: italic;
+  color: #c7c7c7;
+  letter-spacing: 0;
+}
+
+.container .data-process input::placeholder {
+  font-style: italic;
+  color: #c7c7c7;
+  letter-spacing: 0;
+}
+
+.container .data-process h4 {
+  color: #505050;
+  font-size: 14px;
+  margin: 15px;
+}
+
+.container .data-process .output {
+  width: 100%;
+  max-width: 400px;
+  min-height: 40px;
+  max-height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 6px;
+  word-wrap: break-word;
+  color: grey;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.container .credits {
+  margin: 20px 0 -50px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
