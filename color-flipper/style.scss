@@ -24,6 +24,14 @@
         }
     }
 
+    p {
+        margin-top: 3rem;
+        .color-rgb {
+            background-color: white;
+            padding: 1rem 2rem;
+        }
+    }    
+
     .btn {
         padding: 1rem 2rem;
         font-size: 1rem;
