@@ -13,8 +13,7 @@ const randomString = () => Math.random().toString(36).slice(2);
 
 // 5. remove duplicates from an array
 const uniqueSet = (arr) => [...new Set(arr || [])];
-const uniqueIndexOf = (array) =>
-  (array || []).filter((item, index) => array.indexOf(item) === index);
+const uniqueIndexOf = (array) => (array || []).filter((item, index) => array.indexOf(item) === index);
 const uniqueSortFilter = (array) =>
   (array || [])
     .sort()
@@ -36,10 +35,8 @@ const uniqueReduce = (array) =>
   );
 
 // 6. convert RGB format to hex
-const rgbToHex = ([red = 0, green = 0, blue = 0] = []) =>
-  `#${((red << 16) | (green << 8) | blue).toString(16)}`;
-const rgbToHex2 = (r, g, b) =>
-  "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+const rgbToHex = ([red = 0, green = 0, blue = 0] = []) => `#${((red << 16) | (green << 8) | blue).toString(16)}`;
+const rgbToHex2 = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 
 // convert hex to rgb
 const hexToRgb = (hex) => {
@@ -73,8 +70,7 @@ const isPageInBottom = () =>
   document.documentElement.scrollHeight;
 
 // 12. accurately determin Javascript data types
-const toType = (obj) =>
-  Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
+const toType = (obj) => Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
 
 // convert decimal to binary
 const dec2bin = (dec) => (dec >>> 0).toString(2);
@@ -96,8 +92,22 @@ const normalizeList = (list, flag = LIST_DEFAULT) => {
     list = [...new Set(list)];
   }
   if (flag & LIST_SORTED) {
-    list = list.sprt((a, b) => a - b);
+    list = list.sort((a, b) => a - b);
   }
 
   return list;
 };
+
+// helper function to pick from object
+const pick = (obj, props) => {
+  // create new object
+  const picked = {}
+
+  // loop through props and push to new object
+  for (const prop of props) {
+    picked[prop] = obj[prop]
+  }
+
+  // return new object
+  return picked
+}
