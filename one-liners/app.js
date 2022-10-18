@@ -111,3 +111,23 @@ const pick = (obj, props) => {
   // return new object
   return picked
 }
+
+const mergeStrings = (...props) => {
+  return props.join(' ')
+}
+
+const stringifyValues = (...props) => {
+  return mergeStrings(...props.map(item => JSON.stringify(item)))
+}
+
+const prepareObject = (...props) => {
+  const obj = {}
+
+  props.forEach((item, index) => {
+    obj[index] = stringifyValues(item)
+  })
+
+  return obj
+}
+
+prepareObject(1, '2', 'III', () => 4, new RegExp('five', 'g'), {seeks: true}, {next: ['s', 'e', 'v', 'e', 'n']}, {ei: {gh: {th: '0_0'}}})
